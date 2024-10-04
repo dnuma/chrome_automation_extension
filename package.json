@@ -1,0 +1,11 @@
+{
+  "name": "chrome_automation_extension",
+  "version": "1.0.0",
+  "description": "A simple but effective Chrome Extension to add all tests cases and execute them using a single click",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

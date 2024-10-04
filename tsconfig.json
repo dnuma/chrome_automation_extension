@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "target": "es6", 
+    "module": "commonjs", 
+    "outDir": "./", 
+    "strict": true 
+  },
+  "include": ["popup/popup.content/content.tsent.ts"]
+}
