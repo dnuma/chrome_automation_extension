@@ -1,4 +1,4 @@
-import { test, expect, request } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 import { BasePage } from '../pages/base.page';
 
 test.beforeEach(async ({page}) => {
@@ -16,12 +16,10 @@ test.describe("Simple Google search and validation",
   () => {
     test("Search and asssert", async( { page }) => {
       const basePage = new BasePage(page);
+      const searchTerm = "Playwright";
 
-      
-
+      await basePage.searchGoogle(searchTerm);
+      await expect(basePage.googleSearchResult).toContainText(searchTerm);     
     })
   }
-
-
-
 )
