@@ -1,0 +1,20 @@
+# MacOS
+.DS_STORE
+
+# npm
+node_modules/
+npm-debug.log
+.npmrc
+
+# Build
+dist/
+/temp
+
+
+# playwright files
+*.env
+playwright-report/*
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/

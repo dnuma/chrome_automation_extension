@@ -4,8 +4,19 @@
   "description": "A simple but effective Chrome Extension to add all tests cases and execute them using a single click",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "google": "npx playwright test --trace on --project=chromium --headed --workers=1 -g @google",
+    "duckduckgo": "npx playwright test --trace on --project=chromium --headed --workers=1 -g @duckduckgo",
+    "bing": "npx playwright test --trace on --project=chromium --headed --workers=1 -g @bing"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@playwright/test": "^1.47.2",
+    "playwright": "^1.47.2"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.277",
+    "typescript": "^5.6.2"
+  }
 }

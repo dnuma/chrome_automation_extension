@@ -1,9 +1,14 @@
 {
   "compilerOptions": {
     "target": "es6", 
-    "module": "commonjs", 
-    "outDir": "./", 
-    "strict": true 
+    "module": "commonjs",
+    "outDir": "./",
+    "strict": true,
+    "types": ["chrome"],
   },
-  "include": ["popup/popup.content/content.tsent.ts"]
+  "files": [
+    "popup/popup.ts",
+    "content/content.ts"
+  ],
+  "include": ["popup/popup.ts", "content/content.ts"]
 }

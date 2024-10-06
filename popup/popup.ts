@@ -1,9 +1,12 @@
-
+// This will be compiled to popup.js
 document.addEventListener('DOMContentLoaded', () => {
   const buttonsContainer = document.getElementById('buttons') as HTMLDivElement;
 
+  // Define your Playwright test names and corresponding commands
   const tests = [
     { name: 'Test 1', command: 'npm run test1' },
+    { name: 'Test 2', command: 'npm run test2' },
+    { name: 'Test 3', command: 'npm run test3' },
   ];
 
   tests.forEach(test => {
