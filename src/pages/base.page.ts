@@ -6,6 +6,8 @@ export class BasePage {
   readonly googleSearchBox: Locator;1
   readonly googleSearchButton: Locator;
   readonly googleSearchResult: Locator;
+  readonly bingSearchBox: Locator;
+  readonly bingSearchResult: Locator;
 
   readonly duckSearchBox: Locator;
   readonly duckSearchResult: Locator;
@@ -18,6 +20,8 @@ export class BasePage {
 
     this.duckSearchBox = this.page.locator(`#searchbox_input`);
     this.duckSearchResult = this.page.locator(`h2`).first();
+    this.bingSearchBox = this.page.locator(`#sb_form_q`);
+    this.bingSearchResult = this.page.locator(`ol li`).first();
   }
 
   /**
@@ -35,6 +39,15 @@ export class BasePage {
    */
   async searchDuck(textToSearch: string): Promise<void> {
     await this.duckSearchBox.fill(textToSearch);
+  }
+
+  /**
+   * Searches in Bing
+   * @param {string} textToSearch - The text to be searched.
+   */
+  async searchBing(textToSearch: string): Promise<void> {
+    await this.page.waitForTimeout(1000); // Forced timeout for the ads to load
+    await this.bingSearchBox.fill(textToSearch);
     await this.page.keyboard.press('Enter');
   }
 
