@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <title>Playwright Test Runner</title>
-  </head>
-  <body>
-    <button id="google">Run Google Test</button>
-    <button id="duck">Run DuckDuckGo Test</button>
-    <button id="bing">Run Bing Test</button>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Playwright Test Runner</h1>
 
-    <script src="dist/popup/popup.js"></script>
-  </body>
+    <button id="google">
+        <img src="../../img/google.png" alt="Google icon">
+        Run Google Test
+    </button>
 
+    <button id="duck">
+        <img src="../../img/duckduckgo.png" alt="DuckDuckGo icon">
+        Run DuckDuckGo Test
+    </button>
+
+    <button id="bing">
+        <img src="../../img/bing.png" alt="Bing icon">
+        Run Bing Test
+    </button>
+
+    <div class="footer">
+        <a href="https://github.com/dnuma" target="_blank">github.com/dnuma</a>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
 </html>
