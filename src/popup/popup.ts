@@ -12,7 +12,16 @@ interface TestResponse {
   message: string;
 }
 
-function runTest(testName: string): void {
+function logMessage(message: string) {
+  const logArea = document.getElementById('logArea') as HTMLTextAreaElement;
+  if (logArea) {
+    logArea.value += message + '\n';
+    logArea.scrollTop = logArea.scrollHeight; // Scroll to the bottom as new logs are added
+  }
+}
+
+function runTest(testName: string) {
+  logMessage(`Running ${testName} test...`);
   fetch(`http://localhost:3000/runTest`, {
     method: 'POST',
     headers: {
@@ -21,6 +30,10 @@ function runTest(testName: string): void {
     body: JSON.stringify({ test: testName }),
   })
     .then(response => response.json())
-    .then((data: TestResponse) => console.log(data.message))
-    .catch(error => console.error('Error:', error));
+    .then(data => {
+      logMessage(data.message);
+    })
+    .catch(error => {
+      logMessage('Error: ' + error.message);
+    });
 }
