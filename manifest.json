@@ -2,6 +2,11 @@
   "manifest_version": 3,
   "name": "Playwright Test Runner",
   "version": "1.0",
+  "icons": {
+    "16": "img/logo16.png",
+    "48": "img/logo48.png",
+    "128": "img/logo128.png"
+  },
   "description": "Runs Playwright tests",
   "permissions": ["activeTab", "scripting", "tabs"],
   "action": {
