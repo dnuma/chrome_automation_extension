@@ -5,8 +5,12 @@ A Chrome extension that allows you to run Playwright tests with the click of a b
 ## Features
 
 - Buttons to run Playwright tests (`Google`, `DuckDuckGo`, and `Bing`).
-- Console output shown directly within the extension's popup.
+- Console output is shown directly within the extension's popup.
 - Integration with a local server to execute the Playwright tests.
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/dnuma/chrome_automation_extension/refs/heads/main/img/demo/extension.png" alt="Playwright Test Runner interface">
+</div>
 
 ## Requirements
 
