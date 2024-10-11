@@ -3,15 +3,15 @@
   "name": "Playwright Test Runner",
   "version": "1.0",
   "description": "Runs Playwright tests",
-  "permissions": ["activeTab", "scripting"],
+  "permissions": ["activeTab", "scripting", "tabs"],
   "action": {
-    "default_popup": "src/popup/popup.html",
+    "default_popup": "dist/popup/popup.html",
     "default_title": "Playwright Tests"
   },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["src/content/content.ts"] 
+      "js": ["dist/content/content.js"] 
     }
   ]
 }

@@ -1,12 +1,12 @@
 // Add event listeners to buttons
-document.getElementById('test1')?.addEventListener('click', () => {
-  runTest('test1');
+document.getElementById('google')?.addEventListener('click', () => {
+  runTest('google');
 });
-document.getElementById('test2')?.addEventListener('click', () => {
-  runTest('test2');
+document.getElementById('duck')?.addEventListener('click', () => {
+  runTest('duck');
 });
-document.getElementById('test3')?.addEventListener('click', () => {
-  runTest('test3');
+document.getElementById('bing')?.addEventListener('click', () => {
+  runTest('bing');
 });
 
 // Define the structure for the response data

@@ -6,9 +6,9 @@
   "scripts": {
     "build": "tsc",
     "google": "npx playwright test --trace on --project=chromium --headed --workers=1 -g @google",
-    "duckduckgo": "npx playwright test --trace on --project=chromium --headed --workers=1 -g @duckduckgo",
+    "duck": "npx playwright test --trace on --project=chromium --headed --workers=1 -g @duckduckgo",
     "bing": "npx playwright test --trace on --project=chromium --headed --workers=1 -g @bing",
-    "start": "node server.ts"
+    "start": "node dist/server.js"
   },
   "author": "",
   "license": "ISC",
