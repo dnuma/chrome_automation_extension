@@ -7,17 +7,20 @@
     "build": "tsc",
     "google": "npx playwright test --trace on --project=chromium --headed --workers=1 -g @google",
     "duckduckgo": "npx playwright test --trace on --project=chromium --headed --workers=1 -g @duckduckgo",
-    "bing": "npx playwright test --trace on --project=chromium --headed --workers=1 -g @bing"
+    "bing": "npx playwright test --trace on --project=chromium --headed --workers=1 -g @bing",
+    "start": "node server.ts"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@playwright/test": "^1.47.2",
+    "express": "^4.21.1",
     "playwright": "^1.47.2"
   },
   "devDependencies": {
     "@types/chrome": "^0.0.277",
+    "@types/express": "^5.0.0",
     "@types/node": "^22.7.4",
-    "typescript": "^5.6.2"
+    "typescript": "^5.6.3"
   }
 }

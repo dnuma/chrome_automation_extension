@@ -3,7 +3,7 @@ import type { Page, Locator } from "@playwright/test";
 export class BasePage {
   readonly page: Page;
 
-  readonly googleSearchBox: Locator;1
+  readonly googleSearchBox: Locator;
   readonly googleSearchButton: Locator;
   readonly googleSearchResult: Locator;
   readonly bingSearchBox: Locator;
@@ -20,6 +20,7 @@ export class BasePage {
 
     this.duckSearchBox = this.page.locator(`#searchbox_input`);
     this.duckSearchResult = this.page.locator(`h2`).first();
+    
     this.bingSearchBox = this.page.locator(`#sb_form_q`);
     this.bingSearchResult = this.page.locator(`ol li`).first();
   }
