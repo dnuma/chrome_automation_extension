@@ -1,14 +1,18 @@
 {
   "compilerOptions": {
-    "target": "es6", 
+    "target": "ES2020",
     "module": "commonjs",
-    "outDir": "./",
+    "outDir": "./dist",
+    "rootDir": "./src",
     "strict": true,
     "types": ["chrome"],
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
   },
   "files": [
-    "popup/popup.ts",
-    "content/content.ts"
+    "src/popup/popup.ts",
+    "src/content/content.ts"
   ],
-  "include": ["popup/popup.ts", "content/content.ts"]
+  "include": ["src/**/*.ts"]
 }
