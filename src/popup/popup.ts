@@ -1,4 +1,3 @@
-// Add event listeners to buttons
 document.getElementById('google')?.addEventListener('click', () => {
   runTest('google');
 });
@@ -9,12 +8,10 @@ document.getElementById('bing')?.addEventListener('click', () => {
   runTest('bing');
 });
 
-// Define the structure for the response data
 interface TestResponse {
   message: string;
 }
 
-// Function to run a test
 function runTest(testName: string): void {
   fetch(`http://localhost:3000/runTest`, {
     method: 'POST',
