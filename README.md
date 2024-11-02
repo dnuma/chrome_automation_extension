@@ -23,7 +23,7 @@ A Chrome extension that allows you to run Playwright tests with the click of a b
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-repo/chrome_automation_extension.git
+git clone https://github.com/dnuma/chrome_automation_extension.git
 cd chrome_automation_extension
 ```
 
